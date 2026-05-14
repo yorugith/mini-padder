@@ -50,7 +50,7 @@
 				}],
 				"off": [{
 					"instruction": "drawImage",
-					"src": 0, "srcPos": [2m, 0], "size": [28, 28], "canvasPos": [0, 39]
+					"src": 0, "srcPos": [224, 0], "size": [28, 28], "canvasPos": [0, 39]
 				}],
 				"on": [{
 					"instruction": "drawImage",
