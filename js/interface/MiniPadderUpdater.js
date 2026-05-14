@@ -385,8 +385,20 @@ class MiniPadderUpdater extends Updater {
             'the gap between gamepad areas is now consistently 8px.'
             )
             return true;
-          }
-        } // 5.4
+          },
+          '5': () => {
+            if (typeof Renderer === 'undefined') {
+              return false
+            }
+            MiniPadderUpdater.announceUpdate(
+              'Adding a new skin for Leverless gamepads.', '5.5.0'
+            )
+  
+            Renderer.addSkinToSkinList('Leverless')
+  
+            return true
+          },
+        } // 5.5
       } // 5
     } // end of update tasks
   }
